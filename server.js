@@ -30,5 +30,5 @@ app.use(contentrouter);
 
 /**listen */
 app.listen(PORT, () => {
-    console.log(`server is running at ${PORT} port`.bgYellow.green);
+    console.log(`server is running at ${PORT} port`.bgGreen.black);
 })
