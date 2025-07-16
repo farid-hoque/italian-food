@@ -1,7 +1,3 @@
-
-
- <!-- THis is the menu part coming from menu.html -->
-
 <section id="container" class="sub-page">
 	<div class="wrap-container zerogrid">
 		<div class="crumbs">
@@ -13,167 +9,168 @@
 		<div id="main-content">
 			<div class="wrap-content">
 				<div class="row">
+
 					<div class="col-1-3">
+						<% pasta_data.items.forEach((elem)=> {  %>
 						<div class="wrap-col">
-							<h3>Pasta Plates</h3>
+							<h3 style="color: rgb(81, 109, 52);" class="font-bold text-4xl fa-underline underline">
+								pasta
+							</h3>
+						 
 							<div class="post">
-								<a href="#"><img src="images/i1.jpg"/></a>
+								<a href="#"><img src="<%= elem.url %>" /></a>
 								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								  <span>$25 - $26</span>
-								</div>
-							</div>
-							<div class="post">
-								<a href="#"><img src="images/i2.jpg"/></a>
-								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								   <span>$25 - $26</span>
-								</div>
-							</div>
-							<div class="post">
-								<a href="#"><img src="images/i3.jpg"/></a>
-								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								  <span>$25 - $26</span>
+									<h5><a href="#"> <%= elem.rate %></a></h5>
+									<span>$25 - $26</span>
 								</div>
 							</div>
 						</div>
+						<% }) %>
 					</div>
+					<!--  -->
+
+					
 					<div class="col-1-3">
+						<% starters_data.items.forEach((elem)=> {  %>
 						<div class="wrap-col">
-							<h3>Starters</h3>
+							
+							<h3 style="color: rgb(81, 109, 52);" class="font-bold text-4xl fa-underline underline">starters Menu</h3>
+
 							<div class="post">
-								<a href="#"><img src="images/i4.jpg"/></a>
+								<a href="#"><img src="<%= elem.url %>" /></a>
 								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								   <span>$25 - $26</span>
+									<h5><a href="#"><%= elem.rate %></a></h5>
+									<span>$25 - $26</span>
+								</div>
+							</div>
+							
+
+							<!-- <div class="post">
+								<a href="#"><img src="images/8.jpg" /></a>
+								<div class="wrapper">
+									<h5><a href="#">Lorem ipsum dolor</a></h5>
+									<span>$25 - $26</span>
 								</div>
 							</div>
 							<div class="post">
-								<a href="#"><img src="images/i5.jpg"/></a>
+								<a href="#"><img src="images/7.jpg" /></a>
 								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								  <span>$25 - $26</span>
+									<h5><a href="#">Lorem ipsum dolor</a></h5>
+									<span>$25 - $26</span>
 								</div>
-							</div>
+							</div> -->
+						</div>
+						<% }) %>
+					</div>
+
+					<!--  -->
+					<div class="col-1-3">
+						<% salad_data.items.forEach((elem)=>{  %>
+						<div class="wrap-col">
+							<h3 style="color: rgb(81, 109, 52);" class="font-bold text-4xl fa-underline underline">Salads</h3>
 							<div class="post">
-								<a href="#"><img src="images/i6.jpg"/></a>
+								<a href="#"><img src="<%= elem.url %>" /></a>
 								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								  <span>$25 - $26</span>
+									<h5><a href="#"><%= elem.rate %></a></h5>
+									<span>$25 - $26</span>
 								</div>
 							</div>
 						</div>
+						<% }) %>
+						<!--  -->
 					</div>
-					<div class="col-1-3">
-						<div class="wrap-col">
-							<h3>Salads</h3>
-							<div class="post">
-								<a href="#"><img src="images/i7.jpg"/></a>
-								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								  <span>$25 - $26</span>
-								</div>
-							</div>
-							<div class="post">
-								<a href="#"><img src="images/i8.jpg"/></a>
-								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								  <span>$25 - $26</span>
-								</div>
-							</div>
-							<div class="post">
-								<a href="#"><img src="images/i9.jpg"/></a>
-								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								  <span>$25 - $26</span>
-								</div>
-							</div>
-						</div>
-					</div>
+					<!--  -->
 				</div>
+				<hr>
+				 <!-- === === 2nd row === === time short -->
 				<div class="row">
 					<div class="col-1-3">
 						<div class="wrap-col">
-							<h3>Chef's Specials</h3>
+							<h3 style="color: rgb(81, 109, 52);" class="font-bold text-4xl fa-underline underline animate-bounce">Chef's Specials</h3>
 							<div class="post">
-								<a href="#"><img src="images/i10.jpg"/></a>
+								<a href="#"><img src="images/i10.jpg" /></a>
 								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								   <span>$25 - $26</span>
+									<h5><a href="#">Lorem ipsum dolor</a></h5>
+									<span>$25 - $26</span>
 								</div>
 							</div>
 							<div class="post">
-								<a href="#"><img src="images/i11.jpg"/></a>
+								<a href="#"><img src="images/i11.jpg" /></a>
 								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								  <span>$25 - $26</span>
+									<h5><a href="#">Lorem ipsum dolor</a></h5>
+									<span>$25 - $26</span>
 								</div>
 							</div>
 							<div class="post">
-								<a href="#"><img src="images/i12.jpg"/></a>
+								<a href="#"><img src="images/i12.jpg" /></a>
 								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								   <span>$25 - $26</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-1-3">
-						<div class="wrap-col">
-							<h3>Fast Food</h3>
-							<div class="post">
-								<a href="#"><img src="images/i13.jpg"/></a>
-								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								  <span>$25 - $26</span>
-								</div>
-							</div>
-							<div class="post">
-								<a href="#"><img src="images/i14.jpg"/></a>
-								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								   <span>$25 - $26</span>
-								</div>
-							</div>
-							<div class="post">
-								<a href="#"><img src="images/i15.jpg"/></a>
-								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								   <span>$25 - $26</span>
+									<h5><a href="#">Lorem ipsum dolor</a></h5>
+									<span>$25 - $26</span>
 								</div>
 							</div>
 						</div>
 					</div>
+
+
 					<div class="col-1-3">
 						<div class="wrap-col">
-							<h3>Seafood Specials</h3>
+							<h3 style="color: rgb(81, 109, 52);" class="font-bold text-4xl fa-underline underline animate-bounce">Fast Food</h3>
 							<div class="post">
-								<a href="#"><img src="images/i16.jpg"/></a>
+								<a href="#"><img src="images/i13.jpg" /></a>
 								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								   <span>$25 - $26</span>
+									<h5><a href="#">Lorem ipsum dolor</a></h5>
+									<span>$25 - $26</span>
 								</div>
 							</div>
 							<div class="post">
-								<a href="#"><img src="images/i17.jpg"/></a>
+								<a href="#"><img src="images/i14.jpg" /></a>
 								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								   <span>$25 - $26</span>
+									<h5><a href="#">Lorem ipsum dolor</a></h5>
+									<span>$25 - $26</span>
 								</div>
 							</div>
 							<div class="post">
-								<a href="#"><img src="images/i18.jpg"/></a>
+								<a href="#"><img src="images/i15.jpg" /></a>
 								<div class="wrapper">
-								  <h5><a href="#">Lorem ipsum dolor</a></h5>
-								   <span>$25 - $26</span>
+									<h5><a href="#">Lorem ipsum dolor</a></h5>
+									<span>$25 - $26</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-1-3">
+						<div class="wrap-col">
+							<h3 style="color: rgb(81, 109, 52);" class="font-bold text-4xl fa-underline underline animate-bounce">Seafood Specials</h3>
+							<div class="post">
+								<a href="#"><img src="images/i16.jpg" /></a>
+								<div class="wrapper">
+									<h5><a href="#">Lorem ipsum dolor</a></h5>
+									<span>$25 - $26</span>
+								</div>
+							</div>
+							<div class="post">
+								<a href="#"><img src="images/i17.jpg" /></a>
+								<div class="wrapper">
+									<h5><a href="#">Lorem ipsum dolor</a></h5>
+									<span>$25 - $26</span>
+								</div>
+							</div>
+							<div class="post">
+								<a href="#"><img src="images/i18.jpg" /></a>
+								<div class="wrapper">
+									<h5><a href="#">Lorem ipsum dolor</a></h5>
+									<span>$25 - $26</span>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
+				<!-- row end -->
+
 			</div>
-		</div> 
+		</div>
 	</div>
 </section>
-<!-- Menu part done now -->
