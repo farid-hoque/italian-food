@@ -7,21 +7,18 @@ import { archiveData, another_archive_data, archive_about, archive_latest } from
 import { staffData } from "../data/staffData.js"
 /**import menu data  */
 import { pasta_data,starters_data,salad_data ,specials_food,fast_food,sea_food} from "../data/menuData.js"
+/**import news data */
+ 
 
 
 
 
-
-/**content controller */
-export const menuContentloading = (req, res) => {
-    res.render('menuContent')
-}
-/**home content controller */
-export const homeContentloading = (req, res) => {
-    res.render('homeContent')
-}
-/**menu loading controller */
-export const menuloading = (req, res) => {
+/**
+ * Menu loading controller
+ * @param {*} req 
+ * @param {*} res 
+ */
+export const menu_loading = (req, res) => {
     res.render('menu', {
         pasta_data,
         starters_data,
@@ -31,28 +28,66 @@ export const menuloading = (req, res) => {
         specials_food
     })
 }
-/**gallery loading controller */
-export const galleryloading = (req, res) => {
+
+/**
+ * Gallery loading controller
+ * @param {*} req 
+ * @param {*} res 
+ */
+export const gallery_loading = (req, res) => {
     res.render('gallery', {
         galleryData,
     })
 }
-/**reservation loading controllers */
-export const reservationloading = (req, res) => {
+
+/**
+ * Reservation loading controller
+ * @param {*} req 
+ * @param {*} res 
+ */
+export const reservation_loading = (req, res) => {
     res.render('reservation')
 }
-/**staff loading controllers */
-export const staffloading = (req, res) => {
+
+/**
+ * staff loading controller
+ * @param {*} req 
+ * @param {*} res 
+ */
+export const staff_loading = (req, res) => {
     res.render('staff', {
         staffData,
     })
 }
-/**archive loading controllers */
-export const archiveloading = (req, res) => {
+
+/**
+ * Archive loading controller
+ * @param {*} req 
+ * @param {*} res 
+ */
+export const archive_loading = (req, res) => {
     res.render('archive', {
         archiveData,
         another_archive_data,
         archive_about,
         archive_latest,
     })
+}
+
+/**
+ * Home controller
+ * @param {*} req 
+ * @param {*} res 
+ */
+export const home_loading = (req, res) => {
+    res.render('home')
+}
+
+/**
+ * News loading controller
+ * @param {*} req 
+ * @param {*} res 
+ */
+export const news_loading = (req, res) => {
+    res.render('news')
 }

@@ -8,7 +8,7 @@ import dotenv from "dotenv";
 import colors from "colors";
 import expressEjsLayouts from "express-ejs-layouts";
 import { join, resolve } from "path";
-import contentrouter from "./routes/main.js"
+import mainRouter from "./routes/main.js"
 
 /**dotenv */
 dotenv.config();
@@ -25,7 +25,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"))
 
 /**routes- */
-app.use(contentrouter);
+app.use(mainRouter);
 
 
 /**listen */
